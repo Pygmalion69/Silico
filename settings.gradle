@@ -1,0 +1,5 @@
+rootProject.name = 'Silico'
+/*
+include ':Medusa'
+project(':Medusa').projectDir = new File('/Users/helfrich/git/Medusa/')
+*/

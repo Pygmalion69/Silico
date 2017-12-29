@@ -1,0 +1,34 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Dec 12, 2017, 11:38:59 AM
+    Author     : helfrich
+*/
+
+@font-face {
+    font-family: 'Zorque';
+    src: url('../assets/zorque.ttf');
+}
+
+
+.root{
+    -fx-font-size: 12pt;
+    -fx-font-family: "zorque";
+    -fx-text-fill: #4b4456;
+    -fx-fill: #4b4456;
+  
+}
+
+.text {
+    -fx-text-fill: #4b4456;
+    -fx-fill: #4b4456;
+}
+
+.separator *.line {
+    -fx-border-style: dashed;
+    -fx-border-width: 0 0 1 0; /* its make really one-pixel-border */
+    -fx-border-color: #4b4456;
+}
