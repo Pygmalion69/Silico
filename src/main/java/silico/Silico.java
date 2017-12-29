@@ -149,6 +149,8 @@ public class Silico extends Application implements SilicoGame.Callback {
         gameOverBox.managedProperty().bind(gameOverBox.visibleProperty());
 
         bottomPane.getChildren().addAll(controlBox, gameOverBox);
+        
+        BorderPane.setMargin(bottomPane, new Insets(0, 0, 32, 0));
 
         root.setBottom(bottomPane);
 
@@ -160,7 +162,8 @@ public class Silico extends Application implements SilicoGame.Callback {
 
         root.setCenter(canvas);
 
-        primaryStage.setScene(new Scene(root, 920, 580));
+        primaryStage.setScene(new Scene(root, 920, 560));
+        primaryStage.setResizable(false);
         primaryStage.show();
 
         newGame();
@@ -217,7 +220,7 @@ public class Silico extends Application implements SilicoGame.Callback {
 
         Label baseLabel = new Label(rb.getString("BaseXY"));
         GridPane.setHalignment(baseLabel, HPos.CENTER);
-        //baseLabelText.setFill(Color.valueOf("#4b4456"));
+        
         baseYLabel = new Label();
         GridPane.setHalignment(baseYLabel, HPos.LEFT);
 
